@@ -9,15 +9,11 @@ miniGame.pages['menuPage'] = (function(screens) {
 
 		document.getElementById('id-high-scores').addEventListener(
 			'click',
-			function() { screens.showScreen('page-highscores'); });
-
-		document.getElementById('id-help').addEventListener(
-			'click',
-			function() { screens.showScreen('page-help'); });
+			function() { screens.showScreen('highscoresPage'); });
 
 		document.getElementById('id-about').addEventListener(
 			'click',
-			function() { screens.showScreen('page-about'); });
+			function() { screens.showScreen('aboutPage'); });
 	}
 
 	function run() {

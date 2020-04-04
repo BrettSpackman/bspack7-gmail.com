@@ -35,7 +35,7 @@ body {
 }
 
 #menuPage {
-	padding-top: 1em;
+	padding-top: 7em;
 	cursor: pointer;
 	font-size: 0.75em;
 }
@@ -54,17 +54,17 @@ ul.menu li {
 ul.menu li button {
 	font-family: Arial, sans-serif;
 	font-size: 0.6em;
-	color: #CECEF6;
+	color: black;
 	width: 10em;
 	height: 1.5em;
-	background: #0404B4;
-	border: 0.1em solid rgb(255, 0, 0);
+	background:darkgray;
+	border: 0.1em solid white;
 	border-radius: 0.5em;
 	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
 }
 
 ul.menu li button:hover {
-	background: #2E2EFE;
+	background: white;
 }
 
 ul.menu li button:active {
@@ -77,17 +77,36 @@ ul.menu li button:active {
 	text-align: center;
 }
 
-#page-highscores ol {
+#highscoresPage ol {
 	text-align: center;
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	color: white;
+}
+
+#highscoresPage h1 {
+	color: white;
 }
 
 #gamePage div p {
 	font-size: 0.5em;
 }
 
-#page-about p {
+#aboutPage p {
 	text-align: center;
+	color: white;
+}
+
+#aboutPage h1 {
+	color: white;
+}
+
+#helpPage p {
+	text-align: center;
+	color: white;
+}
+
+#helpPage h1 {
+	color: white;
 }

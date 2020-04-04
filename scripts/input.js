@@ -4,7 +4,7 @@
 //
 // ------------------------------------------------------------------
 miniGame.input = (function() {
-	'use strict';
+    'use strict';
 
 	function Mouse() {
 		var that = {
@@ -17,6 +17,7 @@ miniGame.input = (function() {
 		};
 
 		function mouseDown(e) {
+            console.log("mouse down :", e)
 			that.mouseDown.push(e);
 		}
 
@@ -25,6 +26,7 @@ miniGame.input = (function() {
 		}
 
 		function mouseMove(e) {
+            //console.log("mouse move :", e)
 			that.mouseMove.push(e);
 		}
 
@@ -32,24 +34,25 @@ miniGame.input = (function() {
 			var event,
 				handler;
 			//
-			// Process the mouse events for each of the different kinds of handlers
-			for (event = 0; event < that.mouseDown.length; event++) {
-				for (handler = 0; handler < that.handlersDown.length; handler++) {
-					that.handlersDown[handler](that.mouseDown[event], elapsedTime);
-				}
-			}
+            // Process the mouse events for each of the different kinds of handlers
+            
+			// for (event = 0; event < that.mouseDown.length; event++) {
+			// 	for (handler = 0; handler < that.handlersDown.length; handler++) {
+			// 		that.handlersDown[handler](that.mouseDown[event], elapsedTime);
+			// 	}
+			// }
 
-			for (event = 0; event < that.mouseUp.length; event++) {
-				for (handler = 0; handler < that.handlersUp.length; handler++) {
-					that.handlersUp[handler](that.mouseUp[event], elapsedTime);
-				}
-			}
+			// for (event = 0; event < that.mouseUp.length; event++) {
+			// 	for (handler = 0; handler < that.handlersUp.length; handler++) {
+			// 		that.handlersUp[handler](that.mouseUp[event], elapsedTime);
+			// 	}
+			// }
 
-			for (event = 0; event < that.mouseMove.length; event++) {
-				for (handler = 0; handler < that.handlersMove.length; handler++) {
-					that.handlersMove[handler](that.mouseMove[event], elapsedTime);
-				}
-			}
+			// for (event = 0; event < that.mouseMove.length; event++) {
+			// 	for (handler = 0; handler < that.handlersMove.length; handler++) {
+			// 		that.handlersMove[handler](that.mouseMove[event], elapsedTime);
+			// 	}
+			// }
 
 			//
 			// Now that we have processed all the inputs, reset everything back to the empty state

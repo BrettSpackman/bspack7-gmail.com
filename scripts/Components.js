@@ -70,7 +70,7 @@ miniGame.components = (function() {
 			get center() { return spec.center },
 			get width() { return spec.width }
 		};
-
+ 
 		that.moveRight = function(elapsedTime) {
 			spec.center.x += spec.moveRate * elapsedTime;
 			//

@@ -1,5 +1,6 @@
 miniGame.pages['gamePage'] = (function(model, screens, graphics, input) {
-	var keyboard = input.Keyboard(),
+    var keyboard = input.Keyboard(),
+        mouse = input.Mouse(),
 		cancelNextRequest = false,
 		lastTimeStamp = performance.now();
 
@@ -25,7 +26,8 @@ miniGame.pages['gamePage'] = (function(model, screens, graphics, input) {
 	//
 	//------------------------------------------------------------------
 	function processInput(elapsedTime) {
-		keyboard.update(elapsedTime);
+        keyboard.update(elapsedTime);
+        mouse.update(elapsedTime);
 		model.processInput(elapsedTime);
 	}
 
