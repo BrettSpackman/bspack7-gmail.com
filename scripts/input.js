@@ -17,7 +17,7 @@ miniGame.input = (function() {
 		};
 
 		function mouseDown(e) {
-            console.log("mouse down :", e)
+            //console.log("mouse down :", e)
 			that.mouseDown.push(e);
 		}
 

@@ -1,4 +1,4 @@
-miniGame.pages['gamePage'] = (function(model, screens, graphics, input) {
+miniGame.pages['gamePageHard'] = (function(model, screens, graphics, input) {
     var keyboard = input.Keyboard(),
         mouse = input.Mouse(),
 		cancelNextRequest = false,
@@ -29,8 +29,6 @@ miniGame.pages['gamePage'] = (function(model, screens, graphics, input) {
         }
 
         //console.log(tiles);
-
-        //mouse.registerCommand()
 
 		keyboard.registerCommand(KeyEvent.DOM_VK_ESCAPE, function() {
 			//

@@ -11,14 +11,19 @@
 
         <div id = "menuPage" class = "screen">
             <ul class = "menu">
-                <li><button id = "id-new-game">New&nbsp;Game</button></li>
+                <li><button id = "id-new-game">Easy&nbsp;Game</button></li>
+                <li><button id = "id-new-game-hard">Hard&nbsp;Game</button></li>                
 				<li><button id = "id-high-scores">High&nbsp;Scores</button></li>
                 <li><button id = "id-about">About</button></li>
             </ul>
         </div>
         
-        <div id="gamePage" class = "screen">
-            <canvas id = "canvas-main" width="800" height="600"></canvas>
+        <div id="gamePage" style="text-align: center; text-justify: auto;" class = "screen">
+                <canvas id = "canvas-main" width="640" height="640" style="background-color: grey; "></canvas>
+        </div>
+
+        <div id="gamePageHard" style="text-align: center; text-justify: auto;" class = "screen">
+            <canvas id = "canvas-main" width="640" height="640" style="background-color: grey; "></canvas>
         </div>
 
 		<div id = "highscoresPage" class = "screen">
@@ -55,6 +60,7 @@
     <script src = "scripts/model.js"></script>
     <script src = "scripts/menuPage.js"></script>
     <script src = "scripts/gamePage.js"></script>
+    <script src = "scripts/gamePageHard.js"></script>
     <script src = "scripts/highscoresPage.js"></script>
     <script src = "scripts/aboutPage.js"></script>
     <script src = "scripts/rocket.js"></script>	

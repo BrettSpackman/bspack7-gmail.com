@@ -7,6 +7,10 @@ miniGame.pages['menuPage'] = (function(screens) {
 			'click',
 			function() {screens.showScreen('gamePage'); });
 
+		document.getElementById('id-new-game-hard').addEventListener(
+			'click',
+			function() {screens.showScreen('gamePageHard'); });
+
 		document.getElementById('id-high-scores').addEventListener(
 			'click',
 			function() { screens.showScreen('highscoresPage'); });

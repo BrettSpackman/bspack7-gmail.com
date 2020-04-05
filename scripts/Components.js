@@ -132,7 +132,7 @@ miniGame.components = (function() {
 	//
 	// ------------------------------------------------------------------
 	function Ball(spec) {
-		console.log(spec)
+		// console.log(spec)
 		var collided = false,
 			that = {
 				get left() { return spec.center.x - Constants.BallSize / 2 },
